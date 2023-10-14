@@ -99,7 +99,7 @@
 Генерация промпта составляет одну из основных функциональных частей системы. Она позволяет **автоматически производить написание наиболее подходящего запроса в модель генерации изображения**, отражая при этом суть некоторого текста. 
 Сам текст извлекается из описаний, заголовков и **генерируется автоматически на основе контентного описания кадров видеороликов**.
 
-В качестве LLM (Большой языковой модели) была выбрана модель **Llama 2**, поскольку она имеет ряд преимуществ:
+В качестве LLM (Большой языковой модели) была выбрана модель **Llama**, поскольку она имеет ряд преимуществ:
 1. Простота разработки и обучения.
 2. Высокая скорость и точность обработки запросов.
 3. Открытый исходный код.
@@ -128,12 +128,31 @@
 
 
 ### LoRA
-LoRA - 
+LoRA - это небольшие по размеру файлы, которые можно объединить с моделью Stable Diffusion для введения новых концепций (образов) в модель.
 
 <p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
 
-<!-- CONTACT -->
+### Style Transfer
+[Style Transfer][ST-url] - это технология для перевода визуального и художественного стиля одного изображения в другое. Для данной технологии была выбрана модель [VGG16][vgg16-url].
+
+Рзаработанный подмодуль находится в [блокноте Google Colab][st-colab-url].
+
+**Примеры использования Style Transfer:**
+
+<div align="center"><img src="https://imgur.com/HDJVloM.png"></div>
+<div align="center"><em>Пример работы модели</em></div>
+
+<div align="center"><img src="https://i.imgur.com/xSeVwdI.png"></div>
+<div align="center"><em>Пример работы модели</em></div>
+
+<div align="center"><img src="https://i.imgur.com/a9do1jZ.jpg"></div>
+<div align="center"><em>Пример работы модели</em></div>
+
+<div align="center"><img src="https://i.imgur.com/mFDBTxN.png"></div>
+<div align="center"><em>Пример работы модели</em></div>
+
+
 ## :busts_in_silhouette: Команда
 * Теймуров Чингизхан Иззетдинович (CV) - https://t.me/ItIsNotLiterallyMe
 * Панкрухин Максим Сергеевич (CV/PHP)
@@ -159,3 +178,6 @@ LoRA -
 [onnx-url]: https://onnx.ai/
 [rabbitmq]: https://img.shields.io/badge/rabbitmq-27282C?style=for-the-badge&logo=rabbitmq
 [rabbitmq-url]: https://www.rabbitmq.com/
+[ST-url]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
+[vgg16-url]: https://pytorch.org/vision/stable/models/generated/torchvision.models.vgg16.html?highlight=vgg
+[st-colab-url]: https://colab.research.google.com/drive/1uX6oZP6bERV0ts-wsp6ivmV59iQVi_ji?usp=sharing
