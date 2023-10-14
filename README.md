@@ -58,14 +58,17 @@
 
 ## :wrench: Архитектура системы
 
-Ниже перечислены все основные технологии, использованные в проекте:
+Система представляет из себя микросервисную архитектуру, состояющую из трех модулей:
+1. 
 
+Ниже перечислены все основные технологии, использованные в проекте:
 * [![python][python]][python-url]
 * [![stable-diffusion][stable-diffusion]][stable-diffusion-url]
 * [![PyTorch][pytorch]][pytorch-url]
 * [![onnx][onnx]][onnx-url]
 * [![docker][docker]][docker-url]
 * [![fastapi][fastapi]][fastapi-url]
+* [![rabbitmq][rabbitmq]][rabbitmq-url]
 * [![GoogleColab][GoogleColab]][GoogleColab-url]
 * [![php][php]][php-url]
 <p align="right">(<a href="#image-сreator">Наверх</a>)</p>
@@ -91,7 +94,6 @@
 
 <!-- CONTACT -->
 ## :busts_in_silhouette: Команда
-**Project Manager**: Галяутдинов Аскар Тимурович - asckar.ivanov@yandex.ru
 * Теймуров Чингизхан Иззетдинович (CV) - https://t.me/ItIsNotLiterallyMe
 * Панкрухин Максим Сергеевич (CV/PHP)
 * Галяутдинов Аскар Тимурович (NLP) - Project Manager - asckar.ivanov@yandex.ru
@@ -114,4 +116,5 @@
 [GoogleColab-url]: https://colab.research.google.com/
 [onnx]: https://img.shields.io/badge/onnx-27282C?style=for-the-badge&logo=onnx
 [onnx-url]: https://onnx.ai/
-onnx
+[rabbitmq]: https://img.shields.io/badge/rabbitmq-27282C?style=for-the-badge&logo=rabbitmq
+[rabbitmq-url]: https://www.rabbitmq.com/
