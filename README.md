@@ -14,12 +14,11 @@
   - [Загрузка видео](#загрузка-видео)
   - [Профиль пользователя](#профиль-пользователя)
 - [Генерация промпта](#memo-генерация-промпта)
-  - [Llama](#llama)
-  - [Метрики качества](#метрики-качества)
 - [Генерация изображений](#art-генерация-изображений)
   - [Stable Diffussion](#stable-diffusion)
   - [LoRA](#lora)
-  - [Pose/face estimation](#)
+  - [ControlNet](#controlnet)
+  - [InPaint](#inpaint)
   - [Upscale](#upscale)
   - [Style Transfer](#style-transfer)
 - [Команда](#busts_in_silhouette-команда)
@@ -110,7 +109,7 @@
 ## :art: Генерация изображений
 Генерация изображений работает на базе диффузионных и сверточных нейронных сетей, а также бикубической свертки с интерполяцией (для upscale). Реализация производилась на предобученных моделях с открытым исходным кодом.
 
-### Stable Diffussion 
+### Stable Diffusion 
 Для ядра генерации изображений используется модель нейронной сети [Stable Diffusion][stable-diffusion-url].
 
 **Данный выбор основан на:**
@@ -122,14 +121,26 @@
 * Простота развертывания, разработки и работы с моделью.
 
 
-
-[![stable-diffusion][stable-diffusion]][stable-diffusion-url]
-
-
 ### LoRA
-LoRA - это небольшие по размеру файлы, которые можно объединить с моделью Stable Diffusion для введения новых концепций (образов) в модель.
+LoRA - это небольшие по размеру файлы, которые можно объединить с моделью Stable Diffusion для введения новых концепций (образов) в модель. В данной системе реализован функционал динамической подгрузки LoRA.
 
 <p align="right">(<a href="#image-creator">Наверх</a>)</p>
+
+### ControlNet
+В рамках реализации системы приводится два варианта реализации модификатора ControlNet для Stable Diffusion. ControlNet - это структура нейронной сети для управления моделями диффузии путем добавления дополнительных условий, в данном случае: отслеживание **выражения лица** и **позы человека**.
+
+***Отслеживание позы человека***
+Данная функция генерирует изображение в Stable Diffusion по положению фигуры человека на фотографии. Была использована модель [SDXL-controlnet: OpenPose][OpenPose], которая распознает скелет человека по изображению и накладывает соответствующее условие на диффузионную модель генерации изображений.
+
+***Отслеживание выражения лица человека***
+Модель ControlNet с лицевой обработкой позволяет переносить мимику человека по фото на генерируемые изображения. Для данной задачи была использована модель [ControlNetMediaPipeFace][ControlNetMediaPipeFace-url]. 
+
+### InPaint
+InPaint - модификация Stable Diffusion, позволяющая редактировать выделяемые части изображения через маску и текстовый промпт. В качестве модели была выбрана [Stable-Diffusion-Inpainting][Stable-Diffusion-Inpainting-url].
+
+### Upscale
+
+Масштабирование изображений является одной из самых необходимых функций, поскольку требуется приводить изображения к строго опредленным размерам. Так как Stable Diffusion стабильно генерирует изображения только низкой размерности (до 700 пикселей на сторону), то существует необходимость расширения изображений до нужных масштабов, что приводит к необратимому значительному ухудшению качества изображений. Для качественного масштабирования была использована модель [Stable Diffusion x4 upscaler][SD-upscale-url], которая генерирует выходное изображение в 4 раза больше исходной. Данная модель обучена на изобажениях 512x512 для 2к, что является абсолютным преимуществом выбора модели для upscale.
 
 
 ### Style Transfer
@@ -182,3 +193,7 @@ LoRA - это небольшие по размеру файлы, которые 
 [ST-url]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 [vgg16-url]: https://pytorch.org/vision/stable/models/generated/torchvision.models.vgg16.html?highlight=vgg
 [st-colab-url]: https://colab.research.google.com/drive/1uX6oZP6bERV0ts-wsp6ivmV59iQVi_ji?usp=sharing
+[SD-upscale-url]: https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler
+[OpenPose]: https://huggingface.co/thibaud/controlnet-openpose-sdxl-1.0
+[ControlNetMediaPipeFace-url]: https://huggingface.co/CrucibleAI/ControlNetMediaPipeFace
+[Stable-Diffusion-Inpainting-url]: https://huggingface.co/runwayml/stable-diffusion-inpainting
