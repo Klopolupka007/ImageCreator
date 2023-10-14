@@ -60,14 +60,23 @@
 
 Ниже перечислены все основные технологии, использованные в проекте:
 
-* [![PyTorch][pytorch]][pytorch-url]
-* [![docker][docker]][docker-url]
-* [![flask][flask]][flask-url]
 * [![python][python]][python-url]
-
+* [![stable-diffusion][stable-diffusion]][stable-diffusion-url]
+* [![PyTorch][pytorch]][pytorch-url]
+* [![onnx][onnx]][onnx-url]
+* [![docker][docker]][docker-url]
+* [![fastapi][fastapi]][fastapi-url]
+* [![GoogleColab][GoogleColab]][GoogleColab-url]
+* [![php][php]][php-url]
 <p align="right">(<a href="#image-сreator">Наверх</a>)</p>
 
 ## :globe_with_meridians: Веб-приложение
+### Загрузка видео
+
+
+### Профиль пользователя
+
+
 
 <p align="right">(<a href="#image-сreator">Наверх</a>)</p>
 
@@ -95,3 +104,14 @@
 [python-url]: https://www.python.org
 [docker]: https://img.shields.io/badge/docker-27282C?style=for-the-badge&logo=docker
 [docker-url]: https://www.docker.com
+[fastapi]: https://img.shields.io/badge/fastapi-27282C?style=for-the-badge&logo=fastapi
+[fastapi-url]: https://fastapi.tiangolo.com/
+[stable-diffusion-url]: https://stablediffusionweb.com
+[stable-diffusion]: https://img.shields.io/badge/stablediffusion-F0F0F0.svg?style=for-the-badge&logo=data:image/png%2bxml;base64,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
+[php]: https://img.shields.io/badge/php-27282C?style=for-the-badge&logo=php
+[php-url]: https://www.php.net/
+[GoogleColab]: https://img.shields.io/badge/GoogleColab-27282C?style=for-the-badge&logo=GoogleColab
+[GoogleColab-url]: https://colab.research.google.com/
+[onnx]: https://img.shields.io/badge/onnx-27282C?style=for-the-badge&logo=onnx
+[onnx-url]: https://onnx.ai/
+onnx
