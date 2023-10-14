@@ -88,6 +88,8 @@
 
 ### Профиль пользователя
 
+[Stable Diffusion API][Stable-Diffusion-API-url]
+[Upscale API][Upscale-API-url]
 
 
 <p align="right">(<a href="#image-creator">Наверх</a>)</p>
@@ -119,6 +121,11 @@
 * Большое количество модификаторов, настроек и улучшений для генерации узконаправленных пользовательских запросов.
 * Простота развертывания, разработки и работы с моделью.
 
+<div align="center"><img src=""></div>
+<div align="center"><em>Пример работы Stable Diffusion (800x800 разрешение)</em></div>
+
+<div align="center"><img src=""></div>
+<div align="center"><em>Пример работы Stable Diffusion (2200x800 разрешение)</em></div>
 
 ### LoRA
 LoRA - это небольшие по размеру файлы, которые можно объединить с моделью Stable Diffusion для введения новых концепций (образов) в модель. В данной системе реализован функционал динамической подгрузки LoRA. Файлы можно получить как на HuggingFace, так и на [Civitai][Civitai-url]
@@ -140,8 +147,12 @@ LoRA - это небольшие по размеру файлы, которые 
 <div align="center"><img src="https://i.imgur.com/iHS8jX0.png"></div>
 <div align="center"><em>Пример работы с ControlNet pose estimation</em></div>
 
-3. ***Отслеживание выражения лица человека***.
+
+2. ***Отслеживание выражения лица человека***.
 Модель ControlNet с лицевой обработкой позволяет переносить мимику человека по фото на генерируемые изображения. Для данной задачи была использована модель [ControlNetMediaPipeFace][ControlNetMediaPipeFace-url]. 
+
+<div align="center"><img src=""></div>
+<div align="center"><em>Пример работы с ControlNet pose estimation</em></div>
 
 ### InPaint
 InPaint - модификация Stable Diffusion, позволяющая редактировать выделяемые части изображения через маску и текстовый промпт. В качестве модели была выбрана [Stable-Diffusion-Inpainting][Stable-Diffusion-Inpainting-url].
@@ -212,4 +223,5 @@ InPaint - модификация Stable Diffusion, позволяющая ред
 [ControlNetMediaPipeFace-url]: https://huggingface.co/CrucibleAI/ControlNetMediaPipeFace
 [Stable-Diffusion-Inpainting-url]: https://huggingface.co/runwayml/stable-diffusion-inpainting
 [Civitai-url]: https://civitai.com/tag/lora
-https://colab.research.google.com/drive/1Z-OzonGFlQHL69sAB6mD_PAjzu_IWXtT?usp=sharing
+[Upscale-API-url]: https://colab.research.google.com/drive/1sQ9dIUskv_S-GnpHACibeXoAgb7WHDOq?usp=sharing
+[Stable-Diffusion-API-url]: https://colab.research.google.com/drive/1Z-OzonGFlQHL69sAB6mD_PAjzu_IWXtT?usp=sharing
