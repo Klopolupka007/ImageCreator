@@ -1,10 +1,6 @@
 <h1 align="center">Image Creator</h1>
 <br>
-<p align="center">
-  <a href="https://github.com/Klopolupka007/Part-Mechanical_Recognition/releases/tag/v1.1.0">
-    <img alt="logo" title="Image Creator" src="logo.png" width="300">
-  </a>
-</p>
+<a href="https://github.com/Klopolupka007/Part-Mechanical_Recognition/releases/tag/v1.1.0" align="center"></a>
 <p align="center" href="https://media.tenor.com/jUMex_rdqPwAAAAd/among-us-twerk.gif">Веб-приложение для генерации изображений для загружаемого видео, аватарки пользователя и обложки канала.</p>
 
 
@@ -38,28 +34,41 @@
 - генерация изображений.
 
 **Модуль генерации промпта**:
-- извлечение содержания контента из видео по кадрам (Image captioning);
-- генерация промпта по запросу в LLM (Large Language Model).
+- извлечение содержания контента из видео по кадрам (***Image captioning***);
+- генерация промпта по запросу в LLM (***Large Language Model***).
 
 **Модуль генерации изображений**:
 - фильтрация запрещенного контента;
-- основная генерация изображений на базе модели Stable Diffusion;
-- добавление стилей к изображениям (образам на изображениях) при помощи динамически присоединяемых LoRA моделей;
-- перенос стиля одного изображения на другое (Style Transfer);
+- основная генерация изображений на базе модели ***Stable Diffusion***;
+- добавление стилей к изображениям (образам на изображениях) при помощи динамически присоединяемых ***LoRA*** моделей;
+- перенос стиля одного изображения на другое (***Style Transfer***);
 - генерация изображений на основе позы человека и лица;
-- генерация изображений с InPaint модификатором;
-- масштабирование изображений (upscale);
+- генерация изображений с ***InPaint*** модификатором;
+- масштабирование изображений (***upscale***);
+
+<p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
 ## :technologist: Руководство пользователя
 
 
-<p align="right">(<a href="#image-сreator">Наверх</a>)</p>
+<p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
 
 ## :wrench: Архитектура системы
 
 Система представляет из себя микросервисную архитектуру, состояющую из трех модулей:
-1. 
+
+**1. Веб-приложение.**
+Модуль предназначен для взаимодействия с пользователем в рамках реализации основного функционала системы.
+
+**2. Брокер сообщений.**
+Модуль является связующим звеном между веб-приложением и AI модулем. Необходим для передачи сообщений через API.
+
+**3. AI модуль.**
+Основная логика системы и API-компоненты для связи с веб-приложением. Хранит и реализует функционал моделей нейронных сетей.
+
+<div align="center"><img src="https://i.imgur.com/80UbuYx.png"></div>
+<div align="center"><em>Детальный план архитектуры системы</em></div>
 
 Ниже перечислены все основные технологии, использованные в проекте:
 * [![python][python]][python-url]
@@ -71,7 +80,7 @@
 * [![rabbitmq][rabbitmq]][rabbitmq-url]
 * [![GoogleColab][GoogleColab]][GoogleColab-url]
 * [![php][php]][php-url]
-<p align="right">(<a href="#image-сreator">Наверх</a>)</p>
+<p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
 ## :globe_with_meridians: Веб-приложение
 ### Загрузка видео
@@ -81,15 +90,15 @@
 
 
 
-<p align="right">(<a href="#image-сreator">Наверх</a>)</p>
+<p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
 ## :memo: Генерация промпта
 
-<p align="right">(<a href="#image-сreator">Наверх</a>)</p>
+<p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
 ## :art: Генерация изображений
 
-<p align="right">(<a href="#image-сreator">Наверх</a>)</p>
+<p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
 
 <!-- CONTACT -->
@@ -98,7 +107,7 @@
 * Панкрухин Максим Сергеевич (CV/PHP)
 * Галяутдинов Аскар Тимурович (NLP) - Project Manager - asckar.ivanov@yandex.ru
 
-<p align="right">(<a href="#image-сreator">Наверх</a>)</p>
+<p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
 [pytorch]: https://img.shields.io/badge/pytorch-0A0A0A?style=for-the-badge&logo=pytorch&logoColor=e44c2c
 [pytorch-url]: https://pytorch.org/
