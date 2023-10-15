@@ -86,7 +86,6 @@ _В common_tools лежат вспомогательные данные._
 <div align="center"><img src="https://i.imgur.com/uLm6ilG.png"></div>
 
 Результат показан слева:
-https://i.imgur.com/twcwNFW.png
 <div align="center"><img src="https://i.imgur.com/twcwNFW.png"></div>
 
 При выборе функции генерации баннера, высвечивается аналогичная страница, но с другим разрешением изображений (2204x864):
