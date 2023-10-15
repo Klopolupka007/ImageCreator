@@ -121,7 +121,7 @@
 * Большое количество модификаторов, настроек и улучшений для генерации узконаправленных пользовательских запросов.
 * Простота развертывания, разработки и работы с моделью.
 
-<div align="center"><img src=""></div>
+<div align="center"><img src="https://i.imgur.com/BYpcQ97.jpg"></div>
 <div align="center"><em>Пример работы Stable Diffusion (800x800 разрешение)</em></div>
 
 <div align="center"><img src=""></div>
@@ -131,7 +131,7 @@
 LoRA - это небольшие по размеру файлы, которые можно объединить с моделью Stable Diffusion для введения новых концепций (образов) в модель. В данной системе реализован функционал динамической подгрузки LoRA. Файлы можно получить как на HuggingFace, так и на [Civitai][Civitai-url]
 
 
-<div align="center"><img src="https://i.imgur.com/3t8v5KO.png"></div>
+<div align="center"><img src="https://i.imgur.com/eGbE58Q.png"></div>
 <div align="center"><em>Пример работы с LoRA</em></div>
 
 <div align="center"><img src="https://i.imgur.com/wOcm02R.png"></div>
@@ -178,8 +178,6 @@ InPaint - модификация Stable Diffusion, позволяющая ред
 <div align="center"><img src="https://i.imgur.com/cWOdVCa.png"></div>
 <div align="center"><em>Пример работы модели</em></div>
 
-<div align="center"><img src="https://i.imgur.com/a9do1jZ.jpg"></div>
-<div align="center"><em>Пример работы модели</em></div>
 
 <div align="center"><img src="https://i.imgur.com/d9bpz2c.png"></div>
 <div align="center"><em>Пример работы модели</em></div>
