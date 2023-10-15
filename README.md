@@ -98,6 +98,8 @@ https://i.imgur.com/twcwNFW.png
 Истории пользовательских запросов предназначены для просмотра выполненных операций и данных по ним:
 <div align="center"><img src="https://i.imgur.com/S2ADQ8E.png"></div>
 
+Полная демонстрация работы веб-приложения доступна по ссылке: https://drive.google.com/drive/folders/1HHAjNJe2f4cPa9iC2uqH0wIijEGw88Iu?usp=sharing
+
 <p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
 
