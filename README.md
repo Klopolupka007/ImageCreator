@@ -61,6 +61,8 @@
 
 Для запуска модулей необходимо запустить python-файл с припиской **"api"**.
 
+Подробнее про API в разделе <a href="#globe_with_meridians-api-система">API-система</a>.
+
 <p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
 
