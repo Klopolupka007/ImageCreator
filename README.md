@@ -125,7 +125,7 @@
 <div align="center"><em>Пример работы Stable Diffusion (800x800 разрешение)</em></div>
 
 <div align="center"><img src=""></div>
-<div align="center"><em>Пример работы Stable Diffusion (2200x800 разрешение)</em></div>
+<div align="center"><em>Пример работы Stable Diffusion (2204x864 разрешение)</em></div>
 
 ### LoRA
 LoRA - это небольшие по размеру файлы, которые можно объединить с моделью Stable Diffusion для введения новых концепций (образов) в модель. В данной системе реализован функционал динамической подгрузки LoRA. Файлы можно получить как на HuggingFace, так и на [Civitai][Civitai-url]
@@ -151,7 +151,7 @@ LoRA - это небольшие по размеру файлы, которые 
 2. ***Отслеживание выражения лица человека***.
 Модель ControlNet с лицевой обработкой позволяет переносить мимику человека по фото на генерируемые изображения. Для данной задачи была использована модель [ControlNetMediaPipeFace][ControlNetMediaPipeFace-url]. 
 
-<div align="center"><img src=""></div>
+<div align="center"><img src="https://i.imgur.com/n43f9IM.png"></div>
 <div align="center"><em>Пример работы с ControlNet pose estimation</em></div>
 
 ### InPaint
@@ -186,6 +186,10 @@ InPaint - модификация Stable Diffusion, позволяющая ред
 
 <div align="center"><img src="https://i.imgur.com/mFDBTxN.png"></div>
 <div align="center"><em>Пример работы модели</em></div>
+
+https://i.imgur.com/wzgKSIi.png
+
+https://i.imgur.com/TCdDQ5x.png
 
 
 ## :busts_in_silhouette: Команда
