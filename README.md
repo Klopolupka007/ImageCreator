@@ -68,7 +68,7 @@
 **3. AI модуль.**
 Основная логика системы и API-компоненты для связи с веб-приложением. Хранит и реализует функционал моделей нейронных сетей.
 
-<div align="center"><img src="https://i.imgur.com/0tHsoAk.png"></div>
+<div align="center"><img src="https://i.imgur.com/Wtr4Oz8.png"></div>
 <div align="center"><em>Детальный план архитектуры системы</em></div>
 
 Ниже перечислены все основные технологии, использованные в проекте:
@@ -90,6 +90,7 @@
 
 [Stable Diffusion API][Stable-Diffusion-API-url]
 [Upscale API][Upscale-API-url]
+[Video Description][video-description-url]
 
 
 <p align="right">(<a href="#image-creator">Наверх</a>)</p>
@@ -226,3 +227,4 @@ InPaint - модификация Stable Diffusion, позволяющая ред
 [Civitai-url]: https://civitai.com/tag/lora
 [Upscale-API-url]: https://colab.research.google.com/drive/1sQ9dIUskv_S-GnpHACibeXoAgb7WHDOq?usp=sharing
 [Stable-Diffusion-API-url]: https://colab.research.google.com/drive/1Z-OzonGFlQHL69sAB6mD_PAjzu_IWXtT?usp=sharing
+[video-description-url]: https://colab.research.google.com/drive/15eucJcbxOh6PVBPh6QXaQ5FmqmqLs3M0?usp=sharing
