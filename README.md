@@ -47,6 +47,19 @@
 
 ## :technologist: Руководство пользователя
 
+В начале работы с системой необходимо загрузить зависимости:
+  ```sh
+  pip3 install -r requirements.txt
+  ```
+Также важно убедиться в наличии доступных ресурсов оборудования (GPU/CPU), должно быть как минимум 8 ГБ памяти.
+
+Исполняемые файлы для модулей находятся в папках:
+1) neural_apis > upscale_api – API для модуля Upscale.
+2) neural_apis > video_description_api – API для модуля извлечения описания из кадров видео.
+3) neural_apis > nlp_api – API для языковой модели генерации промптов.
+4) neural_apis > stable_diff_api – API для Stable Diffusion (генерация изображений) и его модификаторов в папке stable_diff_api/models.
+
+Для запуска модулей необходимо запустить python-файл с припиской **"api"**.
 
 <p align="right">(<a href="#image-creator">Наверх</a>)</p>
 
@@ -118,7 +131,7 @@
 <div align="center"><img src="https://i.imgur.com/BYpcQ97.jpg"></div>
 <div align="center"><em>Пример работы Stable Diffusion (800x800 разрешение)</em></div>
 
-<div align="center"><img src=""></div>
+<div align="center"><img src="https://i.imgur.com/UcQEO78.jpg"></div>
 <div align="center"><em>Пример работы Stable Diffusion (2204x864 разрешение)</em></div>
 
 ### LoRA
