@@ -175,21 +175,20 @@ InPaint - модификация Stable Diffusion, позволяющая ред
 
 **Примеры использования Style Transfer:**
 
-<div align="center"><img src="https://imgur.com/HDJVloM.png"></div>
-<div align="center"><em>Пример работы модели</em></div>
-
-<div align="center"><img src="https://i.imgur.com/xSeVwdI.png"></div>
+<div align="center"><img src="https://i.imgur.com/cWOdVCa.png"></div>
 <div align="center"><em>Пример работы модели</em></div>
 
 <div align="center"><img src="https://i.imgur.com/a9do1jZ.jpg"></div>
 <div align="center"><em>Пример работы модели</em></div>
 
-<div align="center"><img src="https://i.imgur.com/mFDBTxN.png"></div>
+<div align="center"><img src="https://i.imgur.com/d9bpz2c.png"></div>
 <div align="center"><em>Пример работы модели</em></div>
 
-https://i.imgur.com/wzgKSIi.png
+<div align="center"><img src="https://i.imgur.com/TCdDQ5x.png"></div>
+<div align="center"><em>Пример работы модели</em></div>
 
-https://i.imgur.com/TCdDQ5x.png
+<div align="center"><img src="https://i.imgur.com/wzgKSIi.png"></div>
+<div align="center"><em>Пример работы модели</em></div>
 
 
 ## :busts_in_silhouette: Команда
